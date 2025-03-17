@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+header.dark-mode {
+  background-color: #222;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#darkModeToggle:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.hero.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Download Workflow */
+.download-workflow {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.download-workflow.dark-mode {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.step-1,
+.step-2,
+.step-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step-1 input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.step-1 button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.step-1 button:hover {
+  background-color: #0056b3;
+}
+
+.link-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-details img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.link-details h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.step-2 select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.step-2 button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.step-2 button:hover {
+  background-color: #218838;
+}
+
+.step-3 .progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.step-3 .progress {
+  height: 100%;
+  background-color: #007bff;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.step-3 p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer.dark-mode {
+  background-color: #222;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}

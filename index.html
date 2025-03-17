@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVI Downloader - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+  <div class="logo">
+    <img src="assets/images/logo.png" alt="AVI Downloader Logo">
+    <h1>AVI Downloader</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a href="report.html">Report</a></li>
+      <li><button id="darkModeToggle"><i class="fas fa-moon">mode</i></button></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Download Audio, Video, and Images</h2>
+      <p>Paste your link below and get your favorite content in seconds!</p>
+      <div class="download-workflow">
+        <div class="step-1">
+          <input type="text" id="linkInput" placeholder="Paste your link here">
+          <button id="checkLinkBtn">Check Link</button>
+        </div>
+        <div class="step-2 hidden">
+          <div class="link-details">
+            <img src="assets/images/thumbnail-placeholder.png" alt="Thumbnail">
+            <h3 id="linkTitle">Video Title</h3>
+          </div>
+          <select id="formatSelect">
+            <option value="video">Video</option>
+            <option value="audio">Audio</option>
+            <option value="image">Image</option>
+          </select>
+          <select id="qualitySelect" class="hidden">
+            <option value="144p">144p</option>
+            <option value="360p">360p</option>
+            <option value="720p">720p</option>
+            <option value="1080p">1080p</option>
+          </select>
+          <button id="downloadBtn" class="hidden"><i class="fas fa-download"></i> Download</button>
+        </div>
+        <div class="step-3 hidden">
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <p>Downloading: <span id="downloadProgress">0%</span></p>
+          <p>Time remaining: <span id="timeRemaining">00:00</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AVI Downloader. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/home.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
