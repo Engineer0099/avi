@@ -7,24 +7,6 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark-mode {
-  background-color: #1a1a1a;
-  color: #f4f4f4;
-}
-
-/* Header */
-#darkModeToggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-#darkModeToggle:hover {
-  opacity: 0.8;
-}
-
 /* Hero Section */
 .hero {
   display: flex;
