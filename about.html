@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/image.png">
   <title>AVI Downloader - About</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/about.css">
@@ -10,19 +11,36 @@
 <body>
   <!-- Header -->
   <header>
-  <div class="logo">
-    <img src="assets/images/logo.png" alt="AVI Downloader Logo">
-    <h1>AVI Downloader</h1>
+    <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="menu-icon" onclick="toggleLeftNav()">&#9776; Menu</div>
+    <div class="profile-icon" onclick="toggleRightNav()">
+      <img src="img/profilePlaceholderAvator.png" alt="Profile">
+    </div>
   </div>
-  <nav>
+
+    <!-- Left Nav Bar -->
+  <div class="left-nav" id="leftNav">
+    <div class="hide-left-nav">
+      <button onclick="toggleLeftNav()">Hide</button>
+    </div>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="help.html">Help</a></li>
-      <li><a href="report.html">Report</a></li>
+      <li onclick="changePage('index.html')">Home</li>
+      <li onclick="changePage('about.html')">About</li>
+      <li onclick="changePage('help.html')">Help</li>
+      <li onclick="changePage('report.html')">Report</li>
+      <li><button id="darkModeToggle"><i class="fas fa-moon"></i></button></li>
     </ul>
-  </nav>
-  <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+  </div>
+
+  <!-- Right Nav Bar -->
+  <div class="right-nav" id="rightNav">
+    <ul>
+      <li>Log Out</li>
+      <li>Profile</li>
+      <li>Settings</li>
+    </ul>
+  </div>
 </header>
 
   <!-- About Section -->
@@ -33,7 +51,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2023 AVI Downloader. All rights reserved.</p>
+    <p>&copy; 2025 AVI Downloader. All rights reserved.</p>
     <div class="social-icons">
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>

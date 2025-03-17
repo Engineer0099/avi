@@ -6,41 +6,105 @@ body {
   background-color: #f4f4f9;
   color: #333;
 }
+    /* Top Bar */
+.top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      z-index: 0.9;
+}
 
-header {
-  background: #333;
+.top-bar .menu-icon,
+.top-bar .profile-icon {
+      cursor: pointer;
+}
+
+.top-bar .profile-icon img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+}
+
+
+    /* Left Nav Bar */
+.left-nav {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #222;
+      color: white;
+      padding-top: 60px;
+      transition: left 0.3s;
+      z-index: 1;
+}
+.left-nav .hide-left-nav{
+  width: 100%;
+}
+.left-nav .hide-left-nav button{
+  float: right;
+  cursor: pointer;
+  background-color: #333;
   color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+.left-nav .hide-left-nav button:hover{
+  color: #ffffff85;
 }
 
-header .logo {
-  display: flex;
-  align-items: center;
-}
+    .left-nav.open {
+      left: 0;
+    }
 
-header .logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-header nav ul {
+.left-nav ul {
   list-style: none;
-  display: flex;
-  gap: 20px;
+  padding: 0;
 }
 
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+.left-nav ul li {
+  padding: 15px 20px;
+  cursor: pointer;      
 }
 
-header nav ul li a:hover {
-  color: #ff6f61;
+.left-nav ul li:hover {
+  background-color: #444;
 }
+
+    /* Right Nav Bar */
+    .right-nav {
+      position: fixed;
+      top: 60px;
+      right: -200px;
+      width: 200px;
+      background-color: #222;
+      color: white;
+      transition: right 0.3s;
+      z-index: 1;
+    }
+
+    .right-nav.open {
+      right: 0;
+    }
+
+    .right-nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .right-nav ul li {
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+
+    .right-nav ul li:hover {
+      background-color: #444;
+    }
 
 footer {
   background: #333;

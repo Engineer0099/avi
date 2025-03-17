@@ -34,3 +34,22 @@ if (reportForm) {
     alert('Thank you for your report! We will get back to you soon.');
   });
 }
+const rightNav = document.getElementById('rightNav');
+const leftNav = document.getElementById('leftNav');
+
+
+// Toggle Left Nav Bar
+function toggleLeftNav() {
+leftNav.classList.toggle('open');
+}
+
+// Toggle Right Nav Bar
+function toggleRightNav() {
+rightNav.classList.toggle('open');
+}
+
+//Changing Pages
+function changePage(Page){
+  window.location.href = Page;
+}
+
