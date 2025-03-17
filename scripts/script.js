@@ -53,3 +53,8 @@ function changePage(Page){
   window.location.href = Page;
 }
 
+//Toggle left Nav
+function leftNavChoice(){
+  alert("This Isn't Funtioning Now. But We Are Working On This.");
+  toggleRightNav();
+}

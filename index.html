@@ -22,9 +22,6 @@
 
     <!-- Left Nav Bar -->
   <div class="left-nav" id="leftNav">
-    <div class="hide-left-nav">
-      <button onclick="toggleLeftNav()">Hide</button>
-    </div>
     <ul>
         <li onclick="changePage('index.html')">Home</li>
         <li onclick="changePage('about.html')">About</li>
@@ -37,9 +34,9 @@
   <!-- Right Nav Bar -->
   <div class="right-nav" id="rightNav">
     <ul>
-      <li>Log Out</li>
-      <li>Profile</li>
-      <li>Settings</li>
+      <li onclick="leftNavChoice()">Log Out</li>
+      <li onclick="leftNavChoice()">Profile</li>
+      <li onclick="leftNavChoice()">Settings</li>
     </ul>
   </div>
 </header>

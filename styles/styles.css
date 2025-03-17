@@ -30,33 +30,45 @@ body {
 
 
     /* Left Nav Bar */
-.left-nav {
+.left-nav { 
+      display: flex;
+      flex-direction: column;
       position: fixed;
-      top: 0;
+      top: 40px;
       left: -250px;
       width: 250px;
       height: 100%;
       background-color: #222;
       color: white;
-      padding-top: 60px;
+      /* padding-top: 60px; */
       transition: left 0.3s;
       z-index: 1;
 }
-.left-nav .hide-left-nav{
+.left-nav .top-left-nav{
   width: 100%;
+  display: none;
 }
-.left-nav .hide-left-nav button{
+.left-nav .top-left-nav button{
   float: right;
   cursor: pointer;
   background-color: #333;
   color: #fff;
   border: none;
-  border-radius: 1rem;
+  border-radius: .5rem;
   padding: .5rem;
 }
-.left-nav .hide-left-nav button:hover{
+.left-nav .top-left-nav button:hover{
   color: #ffffff85;
 }
+.left-nav .top-left-nav img{
+  float: left;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+}
+
 
     .left-nav.open {
       left: 0;
