@@ -13,56 +13,6 @@ body.dark-mode {
 }
 
 /* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
-  color: white;
-}
-
-header.dark-mode {
-  background-color: #222;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-.logo h1 {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
 #darkModeToggle {
   background: none;
   border: none;
