@@ -13,12 +13,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
-  background-color: #fff;
-  color: #333;
   text-align: center;
 }
 
-.hero.dark-mode {
+.hero .dark-mode {
   background-color: #333;
   color: #fff;
 }
@@ -40,7 +38,6 @@ body {
 
 /* Download Workflow */
 .download-workflow {
-  background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -70,8 +67,8 @@ body {
 
 .step-1 button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background: #ff6f61;
+  color: #fff;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -79,7 +76,7 @@ body {
 }
 
 .step-1 button:hover {
-  background-color: #0056b3;
+  background: #ff4a3d;
 }
 
 .link-details {
@@ -108,8 +105,8 @@ body {
 
 .step-2 button {
   padding: 10px 20px;
-  background-color: #28a745;
-  color: white;
+  background: #ff6f61;
+  color: #fff;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -117,7 +114,7 @@ body {
 }
 
 .step-2 button:hover {
-  background-color: #218838;
+  background: #ff4a3d;
 }
 
 .step-3 .progress-bar {
