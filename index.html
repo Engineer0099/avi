@@ -11,20 +11,34 @@
 <body>
   <!-- Header -->
   <header>
-  <div class="logo">
-    <img src="assets/images/logo.png" alt="AVI Downloader Logo">
-    <h1>AVI Downloader</h1>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="help.html">Help</a></li>
-      <li><a href="report.html">Report</a></li>
-      <li><button id="darkModeToggle"><i class="fas fa-moon">mode</i></button></li>
-    </ul>
-  </nav>
-</header>
+      <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="menu-icon" onclick="toggleLeftNav()">&#9776; Menu</div>
+      <div class="profile-icon" onclick="toggleRightNav()">
+        <img src="img/profilePlaceholderAvator.png" alt="Profile">
+      </div>
+    </div>
+
+      <!-- Left Nav Bar -->
+    <div class="left-nav" id="leftNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><button id="darkModeToggle"><i class="fas fa-moon"></i></button></li>
+      </ul>
+    </div>
+
+    <!-- Right Nav Bar -->
+    <div class="right-nav" id="rightNav">
+      <ul>
+        <li>Log Out</li>
+        <li>Profile</li>
+        <li>Settings</li>
+      </ul>
+    </div>
+  </header>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -41,12 +55,12 @@
             <img src="assets/images/thumbnail-placeholder.png" alt="Thumbnail">
             <h3 id="linkTitle">Video Title</h3>
           </div>
-          <select id="formatSelect">
+          <select id="formatSelect" name="format">
             <option value="video">Video</option>
             <option value="audio">Audio</option>
             <option value="image">Image</option>
           </select>
-          <select id="qualitySelect" class="hidden">
+          <select id="qualitySelect" class="hidden" name="quality">
             <option value="144p">144p</option>
             <option value="360p">360p</option>
             <option value="720p">720p</option>
