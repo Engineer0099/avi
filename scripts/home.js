@@ -46,3 +46,34 @@ document.getElementById('downloadBtn').addEventListener('click', () => {
     }
   }, 500);
 });
+
+// scripts/home.js
+document.getElementById('downloadBtn').addEventListener('click', async () => {
+  const url = document.getElementById('linkInput').value; // Get the link
+
+  // Validate the URL
+  if (!url) {
+    alert('Please enter a valid link!');
+    return;
+  }
+
+  // Make a POST request to the server to start the download
+  try {
+    const response = await fetch('http://localhost:3000/download', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ url }),
+    });
+
+    if (response.ok) {
+      console.log('Download started');
+      // You can update the UI to show download progress here
+    } else {
+      console.error('Error starting download');
+    }
+  } catch (err) {
+    console.error('Failed to start download:', err);
+  }
+});
